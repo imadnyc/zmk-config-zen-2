@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -58,10 +57,10 @@
             //                    | GUI | ALT|     |   |     | SPC | SHFT|
 
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3      &kp N4           &kp N5          &kp N6    &kp N7     &kp N8             &kp N9     &kp N0  &kp DELETE
-&kp TAB         &trans  &trans  &bl BL_TOG  &rgb_ug RGB_TOG  &bootloader     &kp LEFT  &kp DOWN   &kp UP             &kp RIGHT  &trans  &kp ENTER
-&kp LEFT_SHIFT  &trans  &trans  &trans      &trans           &out OUT_TOG    &trans    &trans     &trans             &trans     &trans  &trans
-                                &kp LGUI    &kp LALT         &trans          &trans    &kp SPACE  &kp RIGHT_CONTROL
+&kp ESC         &kp N1           &kp N2           &kp N3           &kp N4           &kp N5             &kp N6    &kp N7     &kp N8             &kp N9     &kp N0  &kp DELETE
+&kp TAB         &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI    &kp LEFT  &kp DOWN   &kp UP             &kp RIGHT  &trans  &kp ENTER
+&kp LEFT_SHIFT  &bt BT_CLR_ALL   &bt BT_PRV       &bt BT_NXT       &out OUT_TOG     &rgb_ug RGB_HUD    &trans    &trans     &trans             &trans     &trans  &trans
+                                                  &kp LGUI         &kp LALT         &trans             &trans    &kp SPACE  &kp RIGHT_CONTROL
             >;
         };
 
