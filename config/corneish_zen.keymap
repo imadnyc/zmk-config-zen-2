@@ -16,7 +16,7 @@
 
         gaming {
             bindings = <&tog 3>;
-            key-positions = <38 39>;
+            key-positions = <38 39 24>;
             timeout-ms = <50>;
             slow-release;
             layers = <0>;
@@ -24,7 +24,7 @@
 
         normalcy {
             bindings = <&to 0>;
-            key-positions = <38 39>;
+            key-positions = <38 39 24>;
             layers = <3>;
             slow-release;
             timeout-ms = <50>;
@@ -85,6 +85,15 @@
 &kp LALT   &kp A  &kp S  &kp D      &kp F      &kp N2     &kp G   &kp H   &kp J   &kp K      &kp L    &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C      &kp V      &kp N3     &kp B   &kp N   &kp M   &kp COMMA  &kp DOT  &kp LS(COLON)
                          &kp LSHFT  &kp SPACE  &kp TAB    &trans  &trans  &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
