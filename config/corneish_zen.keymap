@@ -62,15 +62,27 @@
         };
     };
 
+    behaviors {
+        del_and_num: del_and_num {
+            compatible = "zmk,behavior-hold-tap";
+            label = "DEL_AND_NUM";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <50>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         galite {
             bindings = <
-&kp ESC    &kp B  &kp L  &kp D     &kp W     &kp Z    &kp J  &kp F      &kp O      &kp U    &kp APOS  &kp BACKSPACE
-&kp TAB    &kp N  &kp R  &kp T     &kp S     &kp G    &kp Y  &kp H      &kp A      &kp E    &kp I     &kp ENTER
-&kp LSHFT  &kp X  &kp Q  &kp M     &kp C     &kp V    &kp K  &kp P      &kp COMMA  &kp DOT  &kp FSLH  &kp COLON
-                         &kp LGUI  &kp LALT  &mo 1    &mo 2  &kp SPACE  &kp LCTRL
+&kp ESC    &kp B  &kp L  &kp D     &kp W     &kp Z                       &kp J  &kp F      &kp O      &kp U    &kp APOS  &kp BACKSPACE
+&kp TAB    &kp N  &kp R  &kp T     &kp S     &kp G                       &kp Y  &kp H      &kp A      &kp E    &kp I     &kp ENTER
+&kp LSHFT  &kp X  &kp Q  &kp M     &kp C     &kp V                       &kp K  &kp P      &kp COMMA  &kp DOT  &kp FSLH  &kp COLON
+                         &kp LGUI  &kp LALT  &del_and_num 1 BACKSPACE    &mo 2  &kp SPACE  &kp LCTRL
             >;
         };
 
