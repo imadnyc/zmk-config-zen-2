@@ -26,7 +26,7 @@
             key-positions = <38 39 24>;
             timeout-ms = <50>;
             slow-release;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         normalcy {
@@ -42,6 +42,7 @@
             key-positions = <38 39>;
             slow-release;
             timeout-ms = <300>;
+            layers = <0 5 3>;
         };
 
         galite {
@@ -49,7 +50,7 @@
             key-positions = <38 39 35>;
             timeout-ms = <50>;
             slow-release;
-            layers = <0>;
+            layers = <0 3>;
         };
 
         normalcy-galite {
