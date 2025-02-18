@@ -26,7 +26,7 @@
             key-positions = <38 39 24>;
             timeout-ms = <50>;
             slow-release;
-            layers = <0 5>;
+            layers = <4 0>;
         };
 
         normalcy {
@@ -42,7 +42,7 @@
             key-positions = <38 39>;
             slow-release;
             timeout-ms = <300>;
-            layers = <0 5 3>;
+            layers = <4 0 3>;
         };
 
         galite {
@@ -50,7 +50,7 @@
             key-positions = <38 39 35>;
             timeout-ms = <50>;
             slow-release;
-            layers = <0 3>;
+            layers = <4 3>;
         };
 
         normalcy-galite {
@@ -58,25 +58,19 @@
             key-positions = <38 39 35>;
             timeout-ms = <50>;
             slow-release;
-            layers = <5>;
+            layers = <0>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '  |  ENT |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  :   |
-            //                    | GUI | ALT | MO1 |   | MO2 | SPC  | CTRL |
-
+        galite {
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E     &kp R     &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S  &kp D     &kp F     &kp G    &kp H  &kp J      &kp K      &kp L    &kp APOS  &kp ENTER
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V     &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp COLON
-                         &kp LGUI  &kp LALT  &mo 1    &mo 2  &kp SPACE  &kp RCTRL
+&kp ESC    &kp B  &kp L  &kp D     &kp W     &kp Z    &kp J  &kp F      &kp O      &kp U    &kp APOS  &kp BACKSPACE
+&kp TAB    &kp N  &kp R  &kp T     &kp S     &kp G    &kp Y  &kp H      &kp A      &kp E    &kp I     &kp ENTER
+&kp LSHFT  &kp X  &kp Q  &kp M     &kp C     &kp V    &kp K  &kp P      &kp COMMA  &kp DOT  &kp FSLH  &kp COLON
+                         &kp LGUI  &kp LALT  &mo 1    &mo 2  &kp SPACE  &kp LCTRL
             >;
         };
 
@@ -128,12 +122,18 @@
             >;
         };
 
-        galite {
+        default_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '  |  ENT |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  :   |
+            //                    | GUI | ALT | MO1 |   | MO2 | SPC  | CTRL |
+
             bindings = <
-&kp ESC    &kp B  &kp L  &kp D     &kp W     &kp Z    &kp J  &kp F      &kp O      &kp U    &kp APOS  &kp BACKSPACE
-&kp TAB    &kp N  &kp R  &kp T     &kp S     &kp G    &kp Y  &kp H      &kp A      &kp E    &kp I     &kp ENTER
-&kp LSHFT  &kp X  &kp Q  &kp M     &kp C     &kp V    &kp K  &kp P      &kp COMMA  &kp DOT  &kp FSLH  &kp COLON
-                         &kp LGUI  &kp LALT  &mo 1    &mo 2  &kp SPACE  &kp LCTRL
+&kp ESC    &kp Q  &kp W  &kp E     &kp R     &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB    &kp A  &kp S  &kp D     &kp F     &kp G    &kp H  &kp J      &kp K      &kp L    &kp APOS  &kp ENTER
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V     &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp COLON
+                         &kp LGUI  &kp LALT  &mo 1    &mo 2  &kp SPACE  &kp RCTRL
             >;
         };
     };
