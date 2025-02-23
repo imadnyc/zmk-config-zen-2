@@ -25,6 +25,18 @@
             bindings = <&tog 4>;
             key-positions = <38 24 39>;
         };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <24 11>;
+            layers = <0>;
+        };
+
+        colon {
+            bindings = <&kp SEMI>;
+            key-positions = <24 35>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -73,10 +85,10 @@
 
         gallium {
             bindings = <
-&kp ESC       &kp B  &kp L  &kp D     &kp C     &kp V                &kp J          &kp F      &kp O      &kp U      &kp COMMA   &kp PLUS
-&kp TAB       &kp N  &kp R  &kp T     &kp S     &kp G                &kp Y          &kp H      &kp A      &kp E      &kp I       &kp MINUS
-&shift_macro  &kp X  &kp Q  &kp M     &kp W     &kp Z                &kp K          &kp P      &kp SQT    &kp SLASH  &kp PERIOD  &kp COLON
-                            &kp LGUI  &kp LALT  &ltlt 2 BACKSPACE    &ltlt 3 ENTER  &kp SPACE  &kp LCTRL
+&kp ESC    &kp B  &kp L  &kp D     &kp C     &kp V                &kp J          &kp F      &kp O      &kp U      &kp COMMA   &kp PLUS
+&kp TAB    &kp N  &kp R  &kp T     &kp S     &kp G                &kp Y          &kp H      &kp A      &kp E      &kp I       &kp MINUS
+&kp LSHFT  &kp X  &kp Q  &kp M     &kp W     &kp Z                &kp K          &kp P      &kp SQT    &kp SLASH  &kp PERIOD  &kp COLON
+                         &kp LGUI  &kp LALT  &ltlt 2 BACKSPACE    &ltlt 3 ENTER  &kp SPACE  &kp LCTRL
             >;
         };
 
