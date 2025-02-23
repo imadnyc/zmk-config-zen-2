@@ -28,11 +28,11 @@
             label = "shift_macro";
         };
 
-        enter_qwerty: enter_gaming {
+        enter_qwerty: enter_qwerty {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp ENTER &to 6>;
-            label = "ENTER_GAMING";
+            label = "enter_qwerty";
         };
 
         enter_gaming: enter_gaming {
