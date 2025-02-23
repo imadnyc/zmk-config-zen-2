@@ -56,15 +56,27 @@
         };
     };
 
+    behaviors {
+        ltlt: ltlt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LTLT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <50>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         gallium {
             bindings = <
-&kp ESC       &kp B  &kp L  &kp D     &kp C     &kp V              &kp J        &kp F      &kp O      &kp U      &kp COMMA   &kp PLUS
-&kp TAB       &kp N  &kp R  &kp T     &kp S     &kp G              &kp Y        &kp H      &kp A      &kp E      &kp I       &kp MINUS
-&shift_macro  &kp X  &kp Q  &kp M     &kp W     &kp Z              &kp K        &kp P      &kp SQT    &kp SLASH  &kp PERIOD  &kp COLON
-                            &kp LGUI  &kp LALT  &lt 2 BACKSPACE    &lt 3 ENTER  &kp SPACE  &kp LCTRL
+&kp ESC       &kp B  &kp L  &kp D     &kp C     &kp V                &kp J          &kp F      &kp O      &kp U      &kp COMMA   &kp PLUS
+&kp TAB       &kp N  &kp R  &kp T     &kp S     &kp G                &kp Y          &kp H      &kp A      &kp E      &kp I       &kp MINUS
+&shift_macro  &kp X  &kp Q  &kp M     &kp W     &kp Z                &kp K          &kp P      &kp SQT    &kp SLASH  &kp PERIOD  &kp COLON
+                            &kp LGUI  &kp LALT  &ltlt 2 BACKSPACE    &ltlt 3 ENTER  &kp SPACE  &kp LCTRL
             >;
         };
 
@@ -85,10 +97,10 @@
             //                    | GUI | ALT|     |   |     | SPC | SHFT|
 
             bindings = <
-&trans  &kp N1           &kp N2           &kp N3           &kp N4           &kp N5             &kp N6  &kp N7     &kp N8             &kp N9  &kp N0     &trans
-&trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI    &trans  &kp LEFT   &kp DOWN_ARROW     &kp UP  &kp RIGHT  &trans
-&trans  &trans           &bt BT_PRV       &bt BT_NXT       &out OUT_TOG     &bt BT_CLR         &trans  &trans     &trans             &trans  &trans     &trans
-                                          &kp LGUI         &kp LALT         &trans             &trans  &kp SPACE  &kp RIGHT_CONTROL
+&trans  &kp N1           &kp N2           &kp N3           &kp N4           &kp N5             &kp N6    &kp N7     &kp N8             &kp N9     &kp N0  &trans
+&trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI    &kp LEFT  &kp DOWN   &kp UP_ARROW       &kp RIGHT  &trans  &trans
+&trans  &trans           &bt BT_PRV       &bt BT_NXT       &out OUT_TOG     &bt BT_CLR         &trans    &trans     &trans             &trans     &trans  &trans
+                                          &kp LGUI         &kp LALT         &trans             &trans    &kp SPACE  &kp RIGHT_CONTROL
             >;
         };
 
