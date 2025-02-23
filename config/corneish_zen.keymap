@@ -17,6 +17,8 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200 // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
+&lt { tapping-term-ms = <100>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -43,27 +45,15 @@
         };
     };
 
-    behaviors {
-        ltlt: ltlt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LTLT";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <50>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         gallium {
             bindings = <
-&kp ESC    &kp B  &kp L  &kp D     &kp C     &kp V                &kp J          &kp F      &kp O      &kp U      &kp COMMA   &kp EQUAL
-&kp TAB    &kp N  &kp R  &kp T     &kp S     &kp G                &kp Y          &kp H      &kp A      &kp E      &kp I       &kp MINUS
-&kp LSHFT  &kp X  &kp Q  &kp M     &kp W     &kp Z                &kp K          &kp P      &kp SQT    &kp SLASH  &kp PERIOD  &kp SEMI
-                         &kp LGUI  &kp LALT  &ltlt 1 BACKSPACE    &ltlt 2 ENTER  &kp SPACE  &kp LCTRL
+&kp ESC    &kp B  &kp L  &kp D     &kp C     &kp V              &kp J        &kp F      &kp O      &kp U      &kp COMMA   &kp EQUAL
+&kp TAB    &kp N  &kp R  &kp T     &kp S     &kp G              &kp Y        &kp H      &kp A      &kp E      &kp I       &kp MINUS
+&kp LSHFT  &kp X  &kp Q  &kp M     &kp W     &kp Z              &kp K        &kp P      &kp SQT    &kp SLASH  &kp PERIOD  &kp SEMI
+                         &kp LGUI  &kp LALT  &lt 1 BACKSPACE    &lt 2 ENTER  &kp SPACE  &kp LCTRL
             >;
         };
 
