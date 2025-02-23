@@ -31,7 +31,12 @@
         shift_macro: shift_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &mo 1>, <&macro_pause_for_release>;
+            bindings =
+                <&macro_press>,
+                <&mo 1 &kp LEFT_SHIFT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 1 &kp LSHFT>;
 
             label = "shift_macro";
         };
