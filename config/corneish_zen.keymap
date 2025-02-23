@@ -50,8 +50,8 @@
 
         gallium {
             bindings = <
-&kp ESC    &kp B  &kp L  &kp D     &kp C     &kp V              &kp J        &kp F      &kp O      &kp U      &kp COMMA   &kp EQUAL
-&kp TAB    &kp N  &kp R  &kp T     &kp S     &kp G              &kp Y        &kp H      &kp A      &kp E      &kp I       &kp MINUS
+&kp ESC    &kp B  &kp L  &kp D     &kp C     &kp V              &kp J        &kp F      &kp O      &kp U      &kp COMMA   &kp MINUS
+&kp TAB    &kp N  &kp R  &kp T     &kp S     &kp G              &kp Y        &kp H      &kp A      &kp E      &kp I       &kp EQUAL
 &kp LSHFT  &kp X  &kp Q  &kp M     &kp W     &kp Z              &kp K        &kp P      &kp SQT    &kp SLASH  &kp PERIOD  &kp SEMI
                          &kp LGUI  &kp LALT  &lt 1 BACKSPACE    &lt 2 ENTER  &kp SPACE  &kp LCTRL
             >;
