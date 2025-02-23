@@ -127,7 +127,7 @@
 
         qwerty {
             bindings = <
-&kp ESC       &kp Q  &kp W  &kp E     &kp R     &kp T              &kp J          &kp F      &kp O      &kp U      &kp COMMA   &kp PLUS
+&kp ESC       &kp Q  &kp W  &kp E     &kp R     &kp T              &kp Y          &kp I      &kp O      &kp U      &kp P       &kp PLUS
 &kp TAB       &kp A  &kp S  &kp D     &kp F     &kp G              &kp H          &kp J      &kp K      &kp L      &kp I       &kp MINUS
 &shift_macro  &kp Z  &kp X  &kp C     &kp V     &kp B              &kp N          &kp M      &kp SQT    &kp SLASH  &kp PERIOD  &kp COLON
                             &kp LGUI  &kp LALT  &lt 2 BACKSPACE    &enter_gaming  &kp SPACE  &kp LCTRL
