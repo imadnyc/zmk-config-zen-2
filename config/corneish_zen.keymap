@@ -10,8 +10,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200 // default: 600
@@ -54,10 +52,10 @@
 
         gallium {
             bindings = <
-&kp ESC    &kp B  &kp L  &kp D     &kp C     &kp V              &kp J        &kp F      &kp O      &kp U      &kp COMMA   &kp MINUS
-&kp TAB    &kp N  &kp R  &kp T     &kp S     &kp G              &kp Y        &kp H      &kp A      &kp E      &kp I       &kp EQUAL
-&kp LSHFT  &kp X  &kp Q  &kp M     &kp W     &kp Z              &kp K        &kp P      &kp SQT    &kp SLASH  &kp PERIOD  &kp SEMI
-                         &kp LGUI  &kp LALT  &lt 1 BACKSPACE    &lt 2 ENTER  &kp SPACE  &kp LCTRL
+&kp ESC           &kp B  &kp L  &kp D     &kp C     &kp V              &kp J        &kp F      &kp O            &kp U      &kp COMMA   &kp MINUS
+&kp TAB           &kp N  &kp R  &kp T     &kp S     &kp G              &kp Y        &kp H      &kp A            &kp E      &kp I       &kp EQUAL
+&kp LEFT_CONTROL  &kp X  &kp Q  &kp M     &kp W     &kp Z              &kp K        &kp P      &kp SQT          &kp SLASH  &kp PERIOD  &kp SEMI
+                                &kp LGUI  &kp LALT  &lt 1 BACKSPACE    &lt 2 ENTER  &kp SPACE  &kp RIGHT_SHIFT
             >;
         };
 
