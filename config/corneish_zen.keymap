@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200 // default: 600
@@ -88,15 +87,6 @@
 &kp LALT   &kp A  &kp S  &kp D      &kp F      &kp N2     &kp G   &kp H   &kp J   &kp K      &kp L    &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C      &kp V      &kp N3     &kp B   &kp N   &kp M   &kp COMMA  &kp DOT  &kp LS(COLON)
                          &kp LSHFT  &kp SPACE  &kp TAB    &trans  &trans  &trans
-            >;
-        };
-
-        mouse {
-            bindings = <
-&trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans    &trans  &msc SCRL_DOWN  &msc SCRL_UP  &trans  &trans  &trans
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans    &trans  &mkp LCLK       &mkp RCLK     &trans  &trans  &trans
-&trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans          &trans        &trans  &trans  &trans
-                                        &trans           &trans  &trans    &trans  &trans          &trans
             >;
         };
     };
